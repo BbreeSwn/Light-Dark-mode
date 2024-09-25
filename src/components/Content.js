@@ -7,8 +7,8 @@ const Content = () => {
       <div>
         <h1>Suwanan Sangpisarn</h1>
         <p>DarkMode</p>
-        <img src={light} alt="Logo" />
       </div>
+        <img src={light} alt="Logo" />
     </main>
   );
 };
