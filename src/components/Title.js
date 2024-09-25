@@ -11,7 +11,7 @@ const Title = () => {
   return (
     <header className={theme === "dark"? "dark" : "light"}>
       <span>Mode ({theme})</span>
-      <Switch onChange={toggleMode} checked={theme === "dark"} />
+      <Switch onChange={toggleMode} checked={theme === "dark"} uncheckedIcon={false} checkedIcon={false} onColor={'#ffa500'}/>
     </header>
   );
 };
