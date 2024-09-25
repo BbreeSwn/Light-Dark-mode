@@ -11,7 +11,7 @@ const Content = () => {
         <h1>Suwanan Sangpisarn</h1>
         <p>Toggle mode project</p>
       </div>
-        <img src={light} alt="Logo" />
+         <img src={theme === "dark" ? dark : light } alt="Logo" />
     </main>
   );
 };
