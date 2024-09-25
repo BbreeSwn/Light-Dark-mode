@@ -1,21 +1,19 @@
-import Switch from "react-switch"
-import {useState} from 'react'
+import Switch from "react-switch";
+import { useContext, useState } from "react";
+import { themeContext } from "../App";
 
 const Title = () => {
-    const [theme , setTheme] = useState(false)
+  const { theme, setTheme } = useContext(themeContext);
 
-const toggleMode = (checked) => {
-    setTheme(checked)
-}
+  const toggleMode = (checked) => {
+    setTheme(checked);
+  };
   return (
     <header>
-        <span>Mode ({theme})</span>
-        <Switch
-        onChange={toggleMode}
-        checked = {theme}
-        />
+      <span>Mode ({theme})</span>
+      <Switch onChange={toggleMode} checked={theme} />
     </header>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;
