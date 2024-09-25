@@ -26,7 +26,13 @@ main {
 main img{
     width: 50%;
 }
-header.dark {
+header.dark , main.dark {
     background-color: #121213;
+    color: orange
+}
+main.dark{
+    color : white
+}
+main.dark p {
     color: orange
 }
