@@ -6,7 +6,7 @@ const Content = () => {
     <main>
       <div>
         <h1>Suwanan Sangpisarn</h1>
-        <p>DarkMode</p>
+        <p>Toggle mode project</p>
       </div>
         <img src={light} alt="Logo" />
     </main>

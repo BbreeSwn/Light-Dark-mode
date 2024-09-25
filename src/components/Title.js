@@ -9,7 +9,7 @@ const Title = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
   return (
-    <header>
+    <header className={theme === "dark"? "dark" : "light"}>
       <span>Mode ({theme})</span>
       <Switch onChange={toggleMode} checked={theme === "dark"} />
     </header>
